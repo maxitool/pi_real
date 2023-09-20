@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">pi</string>
+    <string name="choose_area">Choose area</string>
+    <string name="write_age">Write age</string>
+    <string name="choose_...">Choose ...</string>
+</resources>
