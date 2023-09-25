@@ -36,6 +36,7 @@ class RegistrationActivity : AppCompatActivity() {
         checkBoxIsSchoolchild = findViewById(R.id.checkBoxIsSchoolchild)
         checkBoxIsStudent = findViewById(R.id.checkBoxIsStudent)
         buttonNext = findViewById(R.id.buttonNext)
+        val k = 1
         if (userInfoArray != null) {
             val userInfo = Transformations.ArrayToTestTakerInfo(userInfoArray)
             if (userInfo.age != -1)
