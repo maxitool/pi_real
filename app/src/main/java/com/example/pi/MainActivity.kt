@@ -40,9 +40,11 @@ class MainActivity : AppCompatActivity() {
         buttonNext.setOnClickListener {
             val testTakerInfo = getTestTakerInfo()
             if (isAllFieldsFull) {
-                val dbAccess = DBAccess(this)
-                userInformation.id = dbAccess.addNewAnonymous(testTakerInfo)
-                userInformation.isAnonymous = true
+                //val dbAccess = DBAccess(this)
+                //userInformation.id = dbAccess.addNewAnonymous(testTakerInfo)
+                //userInformation.isAnonymous = true
+                val intent = Intent(this, TestActivity::class.java)
+                startActivity(intent)
                 // ...
             }
             }

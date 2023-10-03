@@ -1,6 +1,8 @@
 package com.example.pi
 
-class UserInformation {
-    var id: Int = 0
-    var isAnonymous: Boolean = false
+data class UserInformation (
+    var id: Int,
+    var isAnonymous: Boolean
+) {
+    constructor() : this(0, false)
 }
