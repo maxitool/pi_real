@@ -22,7 +22,7 @@ class TestTableFragment : Fragment() {
     private lateinit var textView: TextView
     private lateinit var arrayNumbers: Array<Int>
     private lateinit var clickedTextView: TextView
-    private var currentNumber: Int = 0
+    private var currentNumber: Int = 1
     private lateinit var returnStateTableElThread: ReturnStateTableElThread
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -101,7 +101,7 @@ class TestTableFragment : Fragment() {
             arrayNumbers[pointer] = i
         }
         pointer = 0
-        for (i in TABLE_SIZE / 2 + 1..TABLE_SIZE - 1)
+        for (i in TABLE_SIZE / 2 + 1..TABLE_SIZE)
             for (j in pointer..TABLE_SIZE - 1)
                 if (!arrayIndex[j]) {
                     arrayNumbers[j] = i
