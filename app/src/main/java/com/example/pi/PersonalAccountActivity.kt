@@ -213,10 +213,8 @@ class PersonalAccountActivity : AppCompatActivity() {
             spinner.isEnabled = false
             checkBoxIsStudent.isEnabled = false
         }
-        if (checkBoxIsStudent.isChecked) {
-            spinner.isEnabled = false
+        if (checkBoxIsStudent.isChecked)
             checkBoxIsSchoolchild.isEnabled = false
-        }
     }
     private fun getTestTakerInfo(): TestTakerInformation {
         clearColorsTextViews()
