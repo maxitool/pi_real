@@ -2,4 +2,25 @@
     <string name="app_name">pi</string>
     <string name="choose_area">Сфера деятельности</string>
     <string name="write_age">Возраст</string>
+    <string name="stage">Этап</string>
+    <string name="from">из</string>
+    <string name="dimensions_of_tables">Размерность таблиц</string>
+    <string name="number_of_stages">Количество этапов</string>
+    <string name="good_luck">Желаем удачи!</string>
+    <string name="rules_of_test">При помощи тестирования по методике Шульте определяются такие показатели внимания как устойчивость и динамика работоспособности. В ходе проведения тестирования, испытуемому необходимо поочередно в таблицах, на которых в случайном порядке расположены числа, отыскивать и указывать числа, в порядке их возрастания. Задача испытуемого – пройти тест как можно быстрее и с наименьшим количеством ошибок. Количество таблиц и их размер выбираются ниже.</string>
+    <string name="graph_mistakes">График ошибок</string>
+    <string name="graph_time">График времени выполнения таблиц</string>
+    <string name="results">Результаты</string>
+    <string name="charts">Графики</string>
+    <string name="ER">Эффективность работы</string>
+    <string name="VR">Врабатываемость</string>
+    <string name="PU">Психическая устойчивость</string>
+    <string name="rating_is">Рейтинг равен</string>
+    <string name="try_again">Попробовать снова</string>
+    <string name="password">Пароль</string>
+    <string name="login">Логин/Никнейм</string>
+    <string name="results_tests">Результаты тестирований</string>
+    <string name="do_test">Пройти тестирование</string>
+    <string name="max_rating">Макс.й рейтинг</string>
+    <string name="average_rating">Средний рейтинг</string>
 </resources>

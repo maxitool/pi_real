@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".PersonalAccountActivity"
+    android:background="@color/green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonCancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/green"
+                android:src="@drawable/baseline_close_24" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEdit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/green"
+                android:src="@drawable/baseline_edit_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:text="@string/login"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:text="@string/password"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:singleLine="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:singleLine="true"/>
+
+                <ImageButton
+                    android:id="@+id/imageViewPasswordEye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_remove_red_eye_24"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:text="@string/write_age"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:text="@string/choose_area"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="140dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:ems="2"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Пол"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonFemale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Женский"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Мужской"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonAnother"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Другой"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBoxIsSchoolchild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Учусь в школе"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxIsStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Учусь в университете"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/results_tests"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max_rating"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/average_rating"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMaxRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/textViewAverageRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:layout_marginBottom="55dp"
+            android:background="@color/black">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTests"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:listitem="@layout/test_row_item"
+                android:scrollbars="vertical"/>
+
+        </FrameLayout>
+
+    <Button
+        android:id="@+id/buttonDoTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/do_test"
+        android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

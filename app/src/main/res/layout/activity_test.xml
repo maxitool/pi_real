@@ -3,21 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="5dp"
     android:background="@color/green"
     tools:context=".TestActivity">
 
     <TextView
-        android:id="@+id/textViewStage"
+        android:id="@+id/textViewCurrentStage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="25sp"
         android:text="TextView" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="2dp">
 
     </FrameLayout>
 

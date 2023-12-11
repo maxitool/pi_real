@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight"
-        tools:targetApi="31">
+        tools:targetApi="34">
+        <activity
+            android:name=".PersonalAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultsActivity"
+            android:exported="false" />
         <activity
             android:name=".TestActivity"
             android:exported="false" />
@@ -36,5 +42,5 @@
             </intent-filter>
         </activity>
     </application>
-
+<uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

@@ -11,22 +11,93 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
+        android:layout_marginBottom="5dp"
+        android:text="Ознакомьтесь с правилами тестирования"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:text="Ознакомьтесь с правилами тестирования" />
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="..." />
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/rules_of_test"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/good_luck"
+        android:textAlignment="center"
+        android:textSize="22sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/dimensions_of_tables"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerSizeTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="85dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/number_of_stages"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCountTables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonNext"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Далее" />
 
 </LinearLayout>

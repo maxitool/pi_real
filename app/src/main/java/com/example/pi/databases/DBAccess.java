@@ -7,11 +7,13 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.pi.Transformations;
 import com.example.pi.databases.tables.Result;
-import com.example.pi.databases.tables.TestTakerInformation;
+import com.example.pi.data.TestTakerInformation;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+//old!! don't use in project (usages to don't using namespace)
 
 public class DBAccess {
 

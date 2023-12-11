@@ -1,10 +1,8 @@
 package com.example.pi;
 
-import com.example.pi.databases.tables.TestTakerInformation;
+import com.example.pi.data.TestTakerInformation;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
+//old!! partially using
 
 public class Transformations {
     public static boolean IntegerToBoolean(int number) {if (number == 0) return false; return true;}

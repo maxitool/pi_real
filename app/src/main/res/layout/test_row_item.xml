@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="3dp"
+    android:layout_marginVertical="3dp"
+    android:paddingHorizontal="2dp"
+    android:paddingVertical="2dp"
+    android:gravity="center_vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="example"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:background="@color/white"/>
+
+
+</FrameLayout>

@@ -44,6 +44,7 @@
             android:enabled="false"/>
 
         <TextView
+            android:id="@+id/textViewLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -60,9 +61,13 @@
             android:layout_gravity="center_horizontal"
             android:textSize="20sp"
             android:background="@color/white"
-            android:hint="Login"/>
+            android:hint="Login"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:singleLine="true"/>
 
         <TextView
+            android:id="@+id/textViewPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -79,7 +84,10 @@
             android:layout_gravity="center_horizontal"
             android:textSize="20sp"
             android:background="@color/white"
-            android:hint="Password" />
+            android:hint="Password"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:singleLine="true"/>
 
         <Button
             android:id="@+id/buttonNext"

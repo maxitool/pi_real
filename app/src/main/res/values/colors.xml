@@ -7,4 +7,6 @@
     <color name="link">#008080</color>
     <color name="correct">#00FF00</color>
     <color name="incorrect">#FF0000</color>
+    <color name="lightGrey">#666666</color>
+    <color name="Gold">#FFD700</color>
 </resources>

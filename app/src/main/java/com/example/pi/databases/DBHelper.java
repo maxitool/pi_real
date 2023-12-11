@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+//old!! don't use in project (usages to don't using namespace)
+
 public class DBHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "pi_database.db";
