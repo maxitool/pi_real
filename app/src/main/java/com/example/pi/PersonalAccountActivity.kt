@@ -140,6 +140,7 @@ class PersonalAccountActivity : AppCompatActivity() {
         imageButtonCancel.setOnClickListener {
             isEditing = false
             imageButtonEdit.setImageResource(R.drawable.baseline_edit_24)
+            clearColorsTextViews()
             changeStateUserInfoElements()
             fillingInInfo()
         }

@@ -39,7 +39,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="5dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -51,7 +50,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5dp"
+                android:layout_marginHorizontal="2dp"
                 android:text="@string/ER"
                 android:textSize="14sp"
                 android:layout_weight="1"/>
@@ -60,7 +59,7 @@
                 android:id="@+id/textViewER"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5dp"
+                android:layout_marginHorizontal="2dp"
                 android:text="23"
                 android:textSize="14sp"
                 android:layout_weight="2"/>
@@ -76,7 +75,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5dp"
+                android:layout_marginHorizontal="2dp"
                 android:text="@string/VR"
                 android:textSize="14sp"
                 android:layout_weight="1"/>
@@ -85,7 +84,7 @@
                 android:id="@+id/textViewVR"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5dp"
+                android:layout_marginHorizontal="2dp"
                 android:text="23"
                 android:textSize="14sp"
                 android:layout_weight="2"/>
@@ -101,7 +100,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5dp"
+                android:layout_marginHorizontal="2dp"
                 android:text="@string/PU"
                 android:textSize="14sp"
                 android:layout_weight="1"/>
@@ -110,7 +109,7 @@
                 android:id="@+id/textViewPU"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="5dp"
+                android:layout_marginHorizontal="2dp"
                 android:text="23"
                 android:textSize="14sp"
                 android:layout_weight="2"/>

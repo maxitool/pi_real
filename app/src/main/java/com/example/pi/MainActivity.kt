@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 val id = SendQuery.checkAccountData(login, password)
                 if (id > 0) {
                     val intent = Intent(this, PersonalAccountActivity::class.java)
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                     intent.putExtra("id",id.toString())
                     startActivity(intent)
                 }
