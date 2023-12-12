@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var textViewAge: TextView
     private var isAllFieldsFull = false
     private var selectedArea: Int = 0
+    private var isButtonNext: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -98,6 +99,7 @@ class MainActivity : AppCompatActivity() {
             checkBoxIsSchoolchild.isEnabled = !isChecked
         }
         buttonNext.setOnClickListener {
+            isButtonNext = true
             val testTakerInfo = getTestTakerInfo()
             if (isAllFieldsFull) {
                 val id = SendQuery.addUser(testTakerInfo)
@@ -107,8 +109,6 @@ class MainActivity : AppCompatActivity() {
                     intent.putExtra("id", id.toString())
                     startActivity(intent)
                 }
-                //val intent = Intent(this, InstructionActivity::class.java) //del
-                //startActivity(intent) //del
             }
         }
         textViewAuthorization = findViewById(R.id.textViewAuthorization) as TextView
@@ -118,6 +118,7 @@ class MainActivity : AppCompatActivity() {
         }
         textViewRegistration = findViewById(R.id.textViewRegistration) as TextView
         textViewRegistration.setOnClickListener {
+            isButtonNext = false
             val testTakerInfo = getTestTakerInfo()
             val intent = Intent(this, RegistrationActivity::class.java)
             intent.putExtra("userInfo", Transformations.TestTakerInfoToArray(testTakerInfo))
@@ -131,8 +132,10 @@ class MainActivity : AppCompatActivity() {
         info.isStudent = checkBoxIsStudent.isChecked
         info.isSchoolchild = checkBoxIsSchoolchild.isChecked
         if (editTextAge.text.toString() == "" || editTextAge.text.toString() == "0") {
-            textViewAge.setTextColor(Color.RED)
-            Toast.makeText(this, "age is empty or is 0", Toast.LENGTH_LONG).show()
+            if (isButtonNext) {
+                textViewAge.setTextColor(Color.RED)
+                Toast.makeText(this, "age is empty or is 0", Toast.LENGTH_LONG).show()
+            }
             return info
         }
         info.age = Integer.parseInt(editTextAge.text.toString())

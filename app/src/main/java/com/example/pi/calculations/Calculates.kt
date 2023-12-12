@@ -14,13 +14,13 @@ class Calculates {
                 return 0f
             val sizeTable = listTimes.size / countStages
             val er = calculateER(countStages, listTimes)
-            if (er <= FASTEST_TIME * sizeTable)
-                return MAX_RATING.toFloat()
             if (er >= SLOWEST_TIME * sizeTable)
                 return MIN_RATING.toFloat()
             var countErrors = 0
             for (i in 0..listMistakes.size - 1)
-                countErrors++
+                countErrors += listMistakes[i]
+            if (er <= FASTEST_TIME * sizeTable)
+                return MAX_RATING.toFloat() - countErrors * PRICE_OF_MISTAKE
             var rating = MAX_RATING - (er - FASTEST_TIME * sizeTable) *
                     (MAX_RATING - MIN_RATING) / ((SLOWEST_TIME - FASTEST_TIME) * sizeTable + 1) -
                     countErrors * PRICE_OF_MISTAKE;
@@ -31,13 +31,13 @@ class Calculates {
         fun calculateRating(ER: Int?, listMistakes: ArrayList<Int>?) : Float {
             if (ER == null || listMistakes == null)
                 return 0f
-            if (ER <= FASTEST_TIME)
-                return MAX_RATING.toFloat()
+            var countErrors = 0
             if (ER >= SLOWEST_TIME)
                 return MIN_RATING.toFloat()
-            var countErrors = 0
             for (i in 0..listMistakes.size - 1)
-                countErrors++
+                countErrors += listMistakes[i]
+            if (ER <= FASTEST_TIME)
+                return MAX_RATING.toFloat() - countErrors * PRICE_OF_MISTAKE
             var rating = MAX_RATING - (ER - MIN_RATING) *
                     (MAX_RATING - MIN_RATING) / (SLOWEST_TIME - FASTEST_TIME + 1) -
                     countErrors * PRICE_OF_MISTAKE;
